@@ -1,0 +1,29 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Главная страница";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Добро пожаловать в библиотеку!</h1>
+    <p class="lead">Управляйте своей коллекцией книг</p>
+
+    <div class="mt-5">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h3 class="card-title">Библиотека</h3>
+                        <p class="card-text">Просмотрите список книг в вашей коллекции</p>
+                        <a href="/Books" class="btn btn-primary btn-lg">Перейти к книгам</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-4">
+        <p>Текущее время: <strong>@DateTime.Now.ToString("HH:mm")</strong></p>
+        <p>Сегодня: <strong>@DateTime.Now.ToString("dd.MM.yyyy")</strong></p>
+    </div>
+</div>
